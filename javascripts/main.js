@@ -1,16 +1,14 @@
 "use strict";
 
-const earth = require('./earth');
-const jupiter = require('./jupiter');
-const mars = require('./mars');
-const mercury = require('./mercury');
-const neptune = require('./neptune');
-const saturn = require('./saturn');
-const uranus = require('./uranus');
-const venus = require('./venus');
+const MySolarSystem = require('./solarSystemOutput');
 
-const solarSystem = {
-	earth, jupiter, mars, mercury, neptune, saturn, uranus, venus
-};
+let divForSolarSystem = document.getElementById("solarSystemDiv");
 
-module.exports = solarSystem;
+MySolarSystem.earth(divForSolarSystem);
+MySolarSystem.jupiter(divForSolarSystem);
+MySolarSystem.mars(divForSolarSystem);
+MySolarSystem.mercury(divForSolarSystem);
+MySolarSystem.neptune(divForSolarSystem);
+MySolarSystem.saturn(divForSolarSystem);
+MySolarSystem.uranus(divForSolarSystem);
+MySolarSystem.venus(divForSolarSystem);
