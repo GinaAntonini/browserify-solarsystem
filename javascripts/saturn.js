@@ -2,25 +2,26 @@
 
 const  saturn = {
 		Name: "Saturn", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "Prehistory",
+    Mass: "5.6836 x 10^26 kg",
+    Volume: "8.2713 x 10^14 km^3",
+    OrbitalDistance: "1.4 billion km",
+    Atmosphere: "hydrogen, helium, methane, trace gases",
+    Satellites: "62 known - Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Janus, Epimetheus, Helene, Telesto, Calypso, Atlas, Prometheus, Pandora, Pan, Ymir, Paaliaq, Tarvos, Ijiraq, Suttungr, Kiviuq, Mundilfari, Albiorix, Skathi, Erriapus, Siarnaq, Thrymr, Narvi, Methone, Pallene, Polydeuces, Daphnis, Aegir, Bebhionn, Bergelmir, Bestla, Farbauti, Fenrir, Fornjot, Hati, Hyrrokkin, Kari, Loge, Skoll, Surtur, Anthe, Jarnsaxa, Greip, Tarqeq, Aegaeon, 9 more unnamed",
+    Probes: "Pioneer 11, Voyager 1 and 2, Cassini"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="saturnDiv"><h2>Name:${saturn.Name}</h2>
-  <h2>Discovered: ${saturn.Discovered}</h2>
-  <h2>Mass: ${saturn.Mass}</h2>
-  <h2>Volume: ${saturn.Volume}</h2>
-  <h2>Distance: ${saturn.Distance}</h2>
-  <h2>Atmosphere: ${saturn.Atmosphere}</h2>
-  <h2>Satellites: ${saturn.Satellites}</h2>
-  <h2>SunDistance: ${saturn.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${saturn.Name}</p>
+  <p>Discovered: ${saturn.Discovered}</p>
+  <p>Mass: ${saturn.Mass}</p>
+  <p>Volume: ${saturn.Volume}</p>
+  <p>Distance: ${saturn.Distance}</p>
+  <p>Atmosphere: ${saturn.Atmosphere}</p>
+  <p>Satellites: ${saturn.Satellites}</p>
+  <p>SunDistance: ${saturn.SunDistance}</p>
   </div>`;
 };
 

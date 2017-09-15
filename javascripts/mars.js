@@ -2,26 +2,26 @@
 
 const  mars = {
 		Name: "Mars", 
-		Discovered: "A long time ago", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "Prehistory",
+    Mass: "6.4171 x 10^23 kg",
+    Volume: "1.6318 x 10^11 km^3",
+    OrbitalDistance: "228 million km",
+    Atmosphere: "CO2, argon, nitrogen, oxygen, CO",
+    Satellites: "Phobos, Deimos (fear and dread, mythical sons of Mars (war) which accompanied him)",
+    Probes: "various Mariner and Mars probes, Viking 1 and 2, Mars Global Surveyor, Mars Pathfinder, Sojourner, 2001 Mars Odyssey, Mars Express, Spirit, Opportunity, Mars Reconnaissance Orbiter, Phoenix, Dawn, Curiosity, Mars Orbiter Mission, MAVEN, ExoMars TGO, Schiaparelli"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="marsDiv">
-  <h2>Name:${mars.Name}</h2>
-  <h2>Discovered: ${mars.Discovered}</h2>
-  <h2>Mass: ${mars.Mass}</h2>
-  <h2>Volume: ${mars.Volume}</h2>
-  <h2>Distance: ${mars.Distance}</h2>
-  <h2>Atmosphere: ${mars.Atmosphere}</h2>
-  <h2>Satellites: ${mars.Satellites}</h2>
-  <h2>SunDistance: ${mars.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${mars.Name}</p>
+  <p>Discovered: ${mars.Discovered}</p>
+  <p>Mass: ${mars.Mass}</p>
+  <p>Volume: ${mars.Volume}</p>
+  <p>Distance: ${mars.Distance}</p>
+  <p>Atmosphere: ${mars.Atmosphere}</p>
+  <p>Satellites: ${mars.Satellites}</p>
+  <p>SunDistance: ${mars.SunDistance}</p>
   </div>`;
 };
 
