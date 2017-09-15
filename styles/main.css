@@ -1,3 +1,11 @@
 body {
-	background-color: darkblue;
+	background-color: midnightblue;
+	color: white;
+}
+
+#solarSystemDiv {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	flex-wrap: row-wrap;
 }
