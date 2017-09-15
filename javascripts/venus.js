@@ -2,26 +2,26 @@
 
 const  venus = {
 		Name: "Venus", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+    Discovered: "Prehistory",
+    Mass: "4.8675 x 10^24 kg",
+    Volume: "9.2843 x 10^11 km^3",
+    OrbitalDistance: "108 million km",
+    Atmosphere: "carbon dioxide, nitrogen, trace gases",
+    Satellites: "none",
+    Probes: "various Venera and Mariner, Vega 1 and 2, Magellan, Venus Express, Akatsuki, IKAROS"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="venusDiv">
-  <h2>Name:${venus.Name}</h2>
-  <h2>Discovered: ${venus.Discovered}</h2>
-  <h2>Mass: ${venus.Mass}</h2>
-  <h2>Volume: ${venus.Volume}</h2>
-  <h2>Distance: ${venus.Distance}</h2>
-  <h2>Atmosphere: ${venus.Atmosphere}</h2>
-  <h2>Satellites: ${venus.Satellites}</h2>
-  <h2>SunDistance: ${venus.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${venus.Name}</p>
+  <p>Discovered: ${venus.Discovered}</p>
+  <p>Mass: ${venus.Mass}</p>
+  <p>Volume: ${venus.Volume}</p>
+  <p>Distance: ${venus.Distance}</p>
+  <p>Atmosphere: ${venus.Atmosphere}</p>
+  <p>Satellites: ${venus.Satellites}</p>
+  <p>SunDistance: ${venus.SunDistance}</p>
   </div>`;
 };
 

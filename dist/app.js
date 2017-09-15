@@ -2,27 +2,27 @@
 "use strict";
 
 const  earth = {
-		Name: "earth", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Name: "Earth", 
+		Discovered: "6000 years ago according to creationists",
+    Mass: "5.9724 x 10^24 kg",
+    Volume: "1.0832 x 10^12 km^3",
+    OrbitalDistance: "150 million km",
+    Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
+    Satellites: "Moon",
+    Probes: "Everything ever created by humans",
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="earthDiv">
-  <h2>Name:${earth.Name}</h2>
-  <h2>Discovered: ${earth.Discovered}</h2>
-  <h2>Mass: ${earth.Mass}</h2>
-  <h2>Volume: ${earth.Volume}</h2>
-  <h2>Distance: ${earth.Distance}</h2>
-  <h2>Atmosphere: ${earth.Atmosphere}</h2>
-  <h2>Satellites: ${earth.Satellites}</h2>
-  <h2>SunDistance: ${earth.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${earth.Name}</p>
+  <p>Discovered: ${earth.Discovered}</p>
+  <p>Mass: ${earth.Mass}</p>
+  <p>Volume: ${earth.Volume}</p>
+  <p>Distance: ${earth.Distance}</p>
+  <p>Atmosphere: ${earth.Atmosphere}</p>
+  <p>Satellites: ${earth.Satellites}</p>
+  <p>SunDistance: ${earth.SunDistance}</p>
   </div>`;
 };
 
@@ -33,26 +33,26 @@ module.exports = outputTo;
 
 const  jupiter = {
 		Name: "Jupiter", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "Prehistory",
+    Mass: "1.8986 x 10^27 kg",
+    Volume: "1.4313 x 10^15 km^3",
+    OrbitalDistance: "778 million km",
+    Atmosphere: "hydrogen, helium, methane, ammonia, trace gases",
+    Satellites: "69 known - Io, Europa, Ganymede, Callisto, Amalthea, Himalia, Elara, Pasiphae, Sinope, Lysithea, Carme, Ananke, Leda, Thebe, Adrastea, Metis, Callirrhoe, Themisto, Megaclite, Taygete, Chaldene, Harpalyke, Kalyke, Iocaste, Erinome, Isonoe, Praxidike, Autonoe, Thyone, Hermippe, Aitne, Eurydome, Euanthe, Euporie, Orthosie, Sponde, Kale, Pasithee, Hegemone, Mneme, Aoede, Thelxinoe, Arche, Kallichore, Helike, Carpo, Eukelade, Cyllene, Kore, Herse, Dia, 18 more unnamed",
+    Probes: "Pioneer 10 and 11, Voyager 1 and 2, Ulysses, Galileo, Cassini, New Horizons, Juno"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="jupiterDiv">
-  <h2>Name:${jupiter.Name}</h2>
-  <h2>Discovered: ${jupiter.Discovered}</h2>
-  <h2>Mass: ${jupiter.Mass}</h2>
-  <h2>Volume: ${jupiter.Volume}</h2>
-  <h2>Distance: ${jupiter.Distance}</h2>
-  <h2>Atmosphere: ${jupiter.Atmosphere}</h2>
-  <h2>Satellites: ${jupiter.Satellites}</h2>
-  <h2>SunDistance: ${jupiter.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${jupiter.Name}</p>
+  <p>Discovered: ${jupiter.Discovered}</p>
+  <p>Mass: ${jupiter.Mass}</p>
+  <p>Volume: ${jupiter.Volume}</p>
+  <p>Distance: ${jupiter.Distance}</p>
+  <p>Atmosphere: ${jupiter.Atmosphere}</p>
+  <p>Satellites: ${jupiter.Satellites}</p>
+  <p>SunDistance: ${jupiter.SunDistance}</p>
   </div>`;
 };
 
@@ -79,26 +79,26 @@ MySolarSystem.venus(divForSolarSystem);
 
 const  mars = {
 		Name: "Mars", 
-		Discovered: "A long time ago", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "Prehistory",
+    Mass: "6.4171 x 10^23 kg",
+    Volume: "1.6318 x 10^11 km^3",
+    OrbitalDistance: "228 million km",
+    Atmosphere: "CO2, argon, nitrogen, oxygen, CO",
+    Satellites: "Phobos, Deimos (fear and dread, mythical sons of Mars (war) which accompanied him)",
+    Probes: "various Mariner and Mars probes, Viking 1 and 2, Mars Global Surveyor, Mars Pathfinder, Sojourner, 2001 Mars Odyssey, Mars Express, Spirit, Opportunity, Mars Reconnaissance Orbiter, Phoenix, Dawn, Curiosity, Mars Orbiter Mission, MAVEN, ExoMars TGO, Schiaparelli"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="marsDiv">
-  <h2>Name:${mars.Name}</h2>
-  <h2>Discovered: ${mars.Discovered}</h2>
-  <h2>Mass: ${mars.Mass}</h2>
-  <h2>Volume: ${mars.Volume}</h2>
-  <h2>Distance: ${mars.Distance}</h2>
-  <h2>Atmosphere: ${mars.Atmosphere}</h2>
-  <h2>Satellites: ${mars.Satellites}</h2>
-  <h2>SunDistance: ${mars.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${mars.Name}</p>
+  <p>Discovered: ${mars.Discovered}</p>
+  <p>Mass: ${mars.Mass}</p>
+  <p>Volume: ${mars.Volume}</p>
+  <p>Distance: ${mars.Distance}</p>
+  <p>Atmosphere: ${mars.Atmosphere}</p>
+  <p>Satellites: ${mars.Satellites}</p>
+  <p>SunDistance: ${mars.SunDistance}</p>
   </div>`;
 };
 
@@ -110,26 +110,26 @@ module.exports = outputTo;
 
 const  mercury = {
 		Name: "Mercury", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "Prehistory",
+    Mass: "3.3011x10^23 kg",
+    Volume: "6.083x10^10",
+    OrbitalDistance: "57 million km",
+    Atmosphere: "oxygen, sodium, hydrogen, helium, potassium, trace gases",
+    Satellites: "none",
+    Probes: "Mariner 10, MESSENGER"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="mercuryDiv">
-  <h2>Name:${mercury.Name}</h2>
-  <h2>Discovered: ${mercury.Discovered}</h2>
-  <h2>Mass: ${mercury.Mass}</h2>
-  <h2>Volume: ${mercury.Volume}</h2>
-  <h2>Distance: ${mercury.Distance}</h2>
-  <h2>Atmosphere: ${mercury.Atmosphere}</h2>
-  <h2>Satellites: ${mercury.Satellites}</h2>
-  <h2>SunDistance: ${mercury.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${mercury.Name}</p>
+  <p>Discovered: ${mercury.Discovered}</p>
+  <p>Mass: ${mercury.Mass}</p>
+  <p>Volume: ${mercury.Volume}</p>
+  <p>Distance: ${mercury.Distance}</p>
+  <p>Atmosphere: ${mercury.Atmosphere}</p>
+  <p>Satellites: ${mercury.Satellites}</p>
+  <p>SunDistance: ${mercury.SunDistance}</p>
   </div>`;
 };
 
@@ -140,26 +140,26 @@ module.exports = outputTo;
 
 const  neptune = {
 		Name: "Neptune", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+    Discovered: "1846, Johann Galle and Urbain Le Verrier",
+    Mass: "1.0243 x 10^26 kg",
+    Volume: "6.254 x 10^13 km^3",
+    OrbitalDistance: "4.5 billion km",
+    Atmosphere: "hydrogen, helium, methane, trace gases",
+    Satellites: "14 known - Naiad, Thalassa, Despina, Galatea, Larissa, Proteus, Triton, Nereid, Halimede, Sao, Laomedeia, Psamathe, Neso, 1 unnamed",
+    Probes: "Voyager 2"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="neptuneDiv">
-  <h2>Name:${neptune.Name}</h2>
-  <h2>Discovered: ${neptune.Discovered}</h2>
-  <h2>Mass: ${neptune.Mass}</h2>
-  <h2>Volume: ${neptune.Volume}</h2>
-  <h2>Distance: ${neptune.Distance}</h2>
-  <h2>Atmosphere: ${neptune.Atmosphere}</h2>
-  <h2>Satellites: ${neptune.Satellites}</h2>
-  <h2>SunDistance: ${neptune.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${neptune.Name}</p>
+  <p>Discovered: ${neptune.Discovered}</p>
+  <p>Mass: ${neptune.Mass}</p>
+  <p>Volume: ${neptune.Volume}</p>
+  <p>Distance: ${neptune.Distance}</p>
+  <p>Atmosphere: ${neptune.Atmosphere}</p>
+  <p>Satellites: ${neptune.Satellites}</p>
+  <p>SunDistance: ${neptune.SunDistance}</p>
   </div>`;
 };
 
@@ -170,25 +170,26 @@ module.exports = outputTo;
 
 const  saturn = {
 		Name: "Saturn", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "Prehistory",
+    Mass: "5.6836 x 10^26 kg",
+    Volume: "8.2713 x 10^14 km^3",
+    OrbitalDistance: "1.4 billion km",
+    Atmosphere: "hydrogen, helium, methane, trace gases",
+    Satellites: "62 known - Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Hyperion, Iapetus, Phoebe, Janus, Epimetheus, Helene, Telesto, Calypso, Atlas, Prometheus, Pandora, Pan, Ymir, Paaliaq, Tarvos, Ijiraq, Suttungr, Kiviuq, Mundilfari, Albiorix, Skathi, Erriapus, Siarnaq, Thrymr, Narvi, Methone, Pallene, Polydeuces, Daphnis, Aegir, Bebhionn, Bergelmir, Bestla, Farbauti, Fenrir, Fornjot, Hati, Hyrrokkin, Kari, Loge, Skoll, Surtur, Anthe, Jarnsaxa, Greip, Tarqeq, Aegaeon, 9 more unnamed",
+    Probes: "Pioneer 11, Voyager 1 and 2, Cassini"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="saturnDiv"><h2>Name:${saturn.Name}</h2>
-  <h2>Discovered: ${saturn.Discovered}</h2>
-  <h2>Mass: ${saturn.Mass}</h2>
-  <h2>Volume: ${saturn.Volume}</h2>
-  <h2>Distance: ${saturn.Distance}</h2>
-  <h2>Atmosphere: ${saturn.Atmosphere}</h2>
-  <h2>Satellites: ${saturn.Satellites}</h2>
-  <h2>SunDistance: ${saturn.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${saturn.Name}</p>
+  <p>Discovered: ${saturn.Discovered}</p>
+  <p>Mass: ${saturn.Mass}</p>
+  <p>Volume: ${saturn.Volume}</p>
+  <p>Distance: ${saturn.Distance}</p>
+  <p>Atmosphere: ${saturn.Atmosphere}</p>
+  <p>Satellites: ${saturn.Satellites}</p>
+  <p>SunDistance: ${saturn.SunDistance}</p>
   </div>`;
 };
 
@@ -218,26 +219,26 @@ module.exports = solarSystem;
 
 const  uranus= {
 		Name: "Uranus", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Discovered: "1781, William Herschel",
+    Mass: "8.6810 x 10^25 kg",
+    Volume: "6.833 x 10^13 km^3",
+    OrbitalDistance: "2.9 billion km",
+    Atmosphere: "hydrogen, helium, methane, trace gases",
+    Satellites: "27 known - Ariel, Umbriel, Titania, Oberon, Miranda, Cordelia, Ophelia, Bianca, Cressida, Desdemona, Juliet, Portia, Rosalind, Belinda, Puck, Caliban, Sycorax, Prospero, Setebos, Stephano, Trinculo, Francisco, Margaret, Ferdinand, Perdita, Mab, Cupid",
+    Probes: "Voyager 2"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="uranusDiv">
-  <h2>Name:${uranus.Name}</h2>
-  <h2>Discovered: ${uranus.Discovered}</h2>
-  <h2>Mass: ${uranus.Mass}</h2>
-  <h2>Volume: ${uranus.Volume}</h2>
-  <h2>Distance: ${uranus.Distance}</h2>
-  <h2>Atmosphere: ${uranus.Atmosphere}</h2>
-  <h2>Satellites: ${uranus.Satellites}</h2>
-  <h2>SunDistance: ${uranus.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${uranus.Name}</p>
+  <p>Discovered: ${uranus.Discovered}</p>
+  <p>Mass: ${uranus.Mass}</p>
+  <p>Volume: ${uranus.Volume}</p>
+  <p>Distance: ${uranus.Distance}</p>
+  <p>Atmosphere: ${uranus.Atmosphere}</p>
+  <p>Satellites: ${uranus.Satellites}</p>
+  <p>SunDistance: ${uranus.SunDistance}</p>
   </div>`;
 };
 
@@ -248,26 +249,26 @@ module.exports = outputTo;
 
 const  venus = {
 		Name: "Venus", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+    Discovered: "Prehistory",
+    Mass: "4.8675 x 10^24 kg",
+    Volume: "9.2843 x 10^11 km^3",
+    OrbitalDistance: "108 million km",
+    Atmosphere: "carbon dioxide, nitrogen, trace gases",
+    Satellites: "none",
+    Probes: "various Venera and Mariner, Vega 1 and 2, Magellan, Venus Express, Akatsuki, IKAROS"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="venusDiv">
-  <h2>Name:${venus.Name}</h2>
-  <h2>Discovered: ${venus.Discovered}</h2>
-  <h2>Mass: ${venus.Mass}</h2>
-  <h2>Volume: ${venus.Volume}</h2>
-  <h2>Distance: ${venus.Distance}</h2>
-  <h2>Atmosphere: ${venus.Atmosphere}</h2>
-  <h2>Satellites: ${venus.Satellites}</h2>
-  <h2>SunDistance: ${venus.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${venus.Name}</p>
+  <p>Discovered: ${venus.Discovered}</p>
+  <p>Mass: ${venus.Mass}</p>
+  <p>Volume: ${venus.Volume}</p>
+  <p>Distance: ${venus.Distance}</p>
+  <p>Atmosphere: ${venus.Atmosphere}</p>
+  <p>Satellites: ${venus.Satellites}</p>
+  <p>SunDistance: ${venus.SunDistance}</p>
   </div>`;
 };
 

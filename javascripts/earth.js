@@ -1,27 +1,27 @@
 "use strict";
 
 const  earth = {
-		Name: "earth", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+		Name: "Earth", 
+		Discovered: "6000 years ago according to creationists",
+    Mass: "5.9724 x 10^24 kg",
+    Volume: "1.0832 x 10^12 km^3",
+    OrbitalDistance: "150 million km",
+    Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
+    Satellites: "Moon",
+    Probes: "Everything ever created by humans",
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="earthDiv">
-  <h2>Name:${earth.Name}</h2>
-  <h2>Discovered: ${earth.Discovered}</h2>
-  <h2>Mass: ${earth.Mass}</h2>
-  <h2>Volume: ${earth.Volume}</h2>
-  <h2>Distance: ${earth.Distance}</h2>
-  <h2>Atmosphere: ${earth.Atmosphere}</h2>
-  <h2>Satellites: ${earth.Satellites}</h2>
-  <h2>SunDistance: ${earth.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${earth.Name}</p>
+  <p>Discovered: ${earth.Discovered}</p>
+  <p>Mass: ${earth.Mass}</p>
+  <p>Volume: ${earth.Volume}</p>
+  <p>Distance: ${earth.Distance}</p>
+  <p>Atmosphere: ${earth.Atmosphere}</p>
+  <p>Satellites: ${earth.Satellites}</p>
+  <p>SunDistance: ${earth.SunDistance}</p>
   </div>`;
 };
 

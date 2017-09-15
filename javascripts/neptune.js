@@ -2,26 +2,26 @@
 
 const  neptune = {
 		Name: "Neptune", 
-		Discovered: "Way long ago!", 
-		Mass: "5.9724 x 10^24 kg", 
-		Volume: "1.0832 x 10^12 km^3", 
-		Distance: "150 million km", 
-		Atmosphere: "Nitrogen, oxygen, water, argon, CO2",
-		Satellites: "Moon, Probes: people, Size: pretty large", 
-		SunDistance: "a long way"
+    Discovered: "1846, Johann Galle and Urbain Le Verrier",
+    Mass: "1.0243 x 10^26 kg",
+    Volume: "6.254 x 10^13 km^3",
+    OrbitalDistance: "4.5 billion km",
+    Atmosphere: "hydrogen, helium, methane, trace gases",
+    Satellites: "14 known - Naiad, Thalassa, Despina, Galatea, Larissa, Proteus, Triton, Nereid, Halimede, Sao, Laomedeia, Psamathe, Neso, 1 unnamed",
+    Probes: "Voyager 2"
 };
 
 const outputTo = (domElement) => {
   domElement.innerHTML += 
-  `<div id="neptuneDiv">
-  <h2>Name:${neptune.Name}</h2>
-  <h2>Discovered: ${neptune.Discovered}</h2>
-  <h2>Mass: ${neptune.Mass}</h2>
-  <h2>Volume: ${neptune.Volume}</h2>
-  <h2>Distance: ${neptune.Distance}</h2>
-  <h2>Atmosphere: ${neptune.Atmosphere}</h2>
-  <h2>Satellites: ${neptune.Satellites}</h2>
-  <h2>SunDistance: ${neptune.SunDistance}</h2>
+  `<div id="planetDiv">
+  <p>Name: ${neptune.Name}</p>
+  <p>Discovered: ${neptune.Discovered}</p>
+  <p>Mass: ${neptune.Mass}</p>
+  <p>Volume: ${neptune.Volume}</p>
+  <p>Distance: ${neptune.Distance}</p>
+  <p>Atmosphere: ${neptune.Atmosphere}</p>
+  <p>Satellites: ${neptune.Satellites}</p>
+  <p>SunDistance: ${neptune.SunDistance}</p>
   </div>`;
 };
 
