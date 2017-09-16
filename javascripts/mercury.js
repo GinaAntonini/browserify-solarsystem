@@ -5,7 +5,7 @@ const  mercury = {
 		Discovered: "Prehistory",
     Mass: "3.3011x10^23 kg",
     Volume: "6.083x10^10",
-    OrbitalDistance: "57 million km",
+    Distance: "57 million km",
     Atmosphere: "oxygen, sodium, hydrogen, helium, potassium, trace gases",
     Satellites: "none",
     Probes: "Mariner 10, MESSENGER"
@@ -14,6 +14,7 @@ const  mercury = {
 const outputTo = (domElement) => {
   domElement.innerHTML += 
   `<div id="planetDiv">
+  <section class="planetContent">
   <p>Name: ${mercury.Name}</p>
   <p>Discovered: ${mercury.Discovered}</p>
   <p>Mass: ${mercury.Mass}</p>
@@ -21,7 +22,9 @@ const outputTo = (domElement) => {
   <p>Distance: ${mercury.Distance}</p>
   <p>Atmosphere: ${mercury.Atmosphere}</p>
   <p>Satellites: ${mercury.Satellites}</p>
-  <p>SunDistance: ${mercury.SunDistance}</p>
+  <p>Probes: ${mercury.Probes}</p>
+  </section>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/3D_Mercury.png">
   </div>`;
 };
 
